@@ -303,8 +303,8 @@ footer {
 }
 
 .footer__logo--img {
-    color: whitesmoke;
     width: 70px;
+    filter: invert(1);
 }
 
 .footer__social--list {
