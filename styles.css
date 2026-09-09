@@ -72,6 +72,7 @@ input:focus, textarea:focus {
 }
 
 .click {
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -388,8 +389,7 @@ MODAL
     color: chartreuse;
 }
 
-.modal__overlay--load {
-    background-color: blue;
+.modal__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -397,11 +397,25 @@ MODAL
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.modal__overlay--load {
+    background-color: black;
     font-size: 80px;
+    z-index: -1;
+}
+
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 28px;
 }
 
 .fa-spinner {
-    animation: spinner 750ms infinite;
+    animation: spinner 750ms infinite linear;
 }
 
 @keyframes spinner {
@@ -411,6 +425,15 @@ MODAL
     100% {
         transform: rotate(360deg);
     }
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: whitesmoke;
+    font-size: 36px;
+    z-index: 100;
 }
 
 /*
