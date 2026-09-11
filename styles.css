@@ -297,7 +297,7 @@ MODAL
     visibility: hidden;
 }
 
-.modal__open .modal {
+.modal--open .modal {
     z-index: 60;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     visibility: visible;
