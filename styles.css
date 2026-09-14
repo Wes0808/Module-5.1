@@ -191,15 +191,12 @@ nav,
 }
 
 .dark-theme .scroll__icon:after,
-.dark-theme .link__hover-effect--black:after {
+.dark-theme .link__hover-effect--black:after,
+.dark-theme .nav__hover-effect--black:after {
     background-color: whitesmoke;
 }
 
-.dark-theme .nav__hover-effect--black {
-    background-color: black;
-}
-
-/*
+ /*
 
 LANDING PAGE
 
