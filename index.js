@@ -2,6 +2,19 @@
 template_ay34op1 
 MCjPEhF1uQPmKkpIg*/
 
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast () {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+    document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
 function contact(event) {
     event.preventDefault();
     const load = document.querySelector('.modal__overlay--load');
@@ -25,7 +38,6 @@ function contact(event) {
         })
 }
 
-let isModalOpen = false;
 function toggleModal(){
     /* Toggle Modal */
     if (isModalOpen) {

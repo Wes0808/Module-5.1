@@ -26,6 +26,7 @@ button {
 
 section {
     background-color: rgb(245, 245, 245);
+    transition: all 300ms ease;
 }
 
 input, textarea {
@@ -156,6 +157,46 @@ nav,
     opacity: 0;
     visibility: hidden;
     transition: all 400ms;
+}
+
+.dark-theme .title,
+ .dark-theme .section__title,
+ .dark-theme .section__sub-title,
+ .dark-theme .nav__link--anchor,
+ .dark-theme .fa-adjust,
+ .dark-theme .header__para
+ /*.dark-theme .scroll__icon*/ {
+    color: whitesmoke;
+}
+
+.dark-theme section {
+    background-color: black;
+}
+
+.dark-theme #personal-logo {
+    filter: none;
+}
+
+.dark-theme .scroll__icon {
+    border-color: whitesmoke;
+}
+
+.dark-theme #personal-logo {
+    filter: invert(1);
+}
+
+.dark-theme .mail__butn {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: whitesmoke;
+}
+
+.dark-theme .nav__hover-effect--black {
+    background-color: black;
 }
 
 /*
